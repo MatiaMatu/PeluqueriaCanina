@@ -11,28 +11,31 @@
 
   <div class="wrapper">
     <form>
-      <h1>Bienvenido!</h1>
+      <h1>Registrarse</h1>
       <div class="input-box">
-        <input type="text" placeholder="Usuario"
+        <input type="text"  placeholder="E-Mail"
+         required>        <ion-icon name="mail-outline"></ion-icon>
+
+      </div>
+
+      <div class="input-box">
+        <input type="text"   placeholder="Usuario"
          required>        <ion-icon name="person-circle-outline"></ion-icon>
 
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Contraseña"
+        <input type="password"  placeholder="Contraseña"
          required>        <ion-icon name="lock-closed-outline"></ion-icon>
 
       </div>
       
-      <div class="remember-forgot">
-        <label><input type="checkbox"> Recordarme</label>
-        <a href="#">¿Olvidaste tu Contraseña?</a>
-      </div>
+     
 
-      <button type="submit" class="btn">Login</button>
+      <button type="submit" class="btn">Crear Cuenta</button>
 
       <div class="register-link">
-        <p>¿No tienes una Cuenta? <a
-          [routerLink]="['/register']" style="color:inherit; text-decoration:none;">Registrate!</a></p>
+        <p>¿Ya tienes una cuenta? <a
+          [routerLink]="['/login']" style="color:inherit; text-decoration:none;">Acceder</a></p>
       </div>
     </form>
   </div>
